@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <b>This is Authors Page</b>
+</head>
+<body>
+{% for posts in posts %}
+    <h1>{{ posts.author }}</h1>
+    <p>{{ posts.date }}</p>
+    <p>{{ posts.content }}</p>
+{% endfor %}
+</body>
+</html>
